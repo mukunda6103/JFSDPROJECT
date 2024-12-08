@@ -1,0 +1,84 @@
+@charset "UTF-8";
+ body {
+        font-family: Arial, sans-serif;
+        background-color: #e0f7fa;
+        color: #333;
+        margin: 0;
+    }
+
+    /* Container Styling */
+    .content-container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 30px;
+        background: linear-gradient(145deg, #ffffff, #d1e8e2);
+        border-radius: 12px;
+        box-shadow: 8px 8px 16px #b0bec5, -8px -8px 16px #ffffff;
+    }
+
+    /* Main Title Styling */
+    h1 {
+        text-align: center;
+        color: #00796b;
+        font-size: 2.5em;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+    }
+
+    /* Flex Container for Side-by-Side Sections */
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    /* Contact Section Styling */
+    .contact-section {
+        flex: 1 1 calc(50% - 40px); /* Two columns with space between */
+        padding: 20px;
+        background: linear-gradient(145deg, #d9f2f3, #ffffff);
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+    }
+
+    .contact-section:hover {
+        transform: translateY(-5px);
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-section h3 {
+        color: #004d40;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+
+    .contact-section p {
+        line-height: 1.6;
+        font-size: 1.1em;
+        color: #424242;
+        margin: 8px 0;
+    }
+
+    /* Phone and Email Styling */
+    .contact-info {
+        color: #006064;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+    }
+
+    .contact-info:hover {
+        color: #004d40;
+        text-decoration: underline;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+        .contact-section {
+            flex: 1 1 100%; /* Full width on smaller screens */
+        }
+    }

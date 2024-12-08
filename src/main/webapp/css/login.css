@@ -1,0 +1,193 @@
+@charset "UTF-8";
+    
+        @charset "UTF-8";
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #00bcd4, #8e44ad); /* Gradient background */
+        }
+
+        /* Login container */
+        .login-container {
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.3);
+            width: 600px;
+            padding: 80px;
+            text-align: center;
+        }
+
+        /* Header styling */
+        h3 {
+            margin-bottom: 40px;
+            color: #333;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        /* Input group styling */
+        .input-group {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Input fields styling for text and password fields */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            font-size: 18px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #6a11cb;
+            outline: none;
+        }
+
+        /* Button styling */
+        .btn {
+            width: 100%;
+            padding: 20px;
+            background-color: #17a2b8; /* Teal color for button */
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #138496; /* Darker teal on hover */
+        }
+
+        /* Button container styling */
+        .button-container {
+            margin-top: 40px;
+        }
+
+        .button-container span {
+            font-size: 18px;
+        }
+
+        .button-container a {
+            color: #6a11cb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button-container a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .login-container {
+                width: 90%;
+                padding: 40px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+
+        /* Loading message styling */
+        .loading-message {
+            color: #ff0000;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input[type="number"],
+        input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            font-size: 18px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="number"]:focus,
+        input[type="password"]:focus {
+            border-color: #6a11cb;
+            outline: none;
+        }
+
+        /* Button Styling */
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #17a2b8;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #138496;
+        }
+
+        /* Button Container Styling */
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button-container span {
+            font-size: 18px;
+        }
+
+        .button-container a {
+            color: #6a11cb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button-container a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .login-container {
+                width: 90%;
+                padding: 40px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+
+        /* Error Message Styling */
+        .error-message {
+            color: #ff0000;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    
